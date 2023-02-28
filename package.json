@@ -1,5 +1,5 @@
 {
-  "name": "rasapackage",
+  "name": "rasaapi",
   "version": "1.0.1",
   "description": "Node js module for Rasa Chatbot",
   "main": "index.js",
