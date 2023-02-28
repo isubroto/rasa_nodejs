@@ -22,11 +22,76 @@ rasa.baseUrl("http://localhost:5005");
 ```
 ### Chat With Rasa
  ```javascript
-rasa.parseModel("hi",res=>{
+rasa.sendMessage("hi",res=>{
     console.log(res);
 });
 ```
 Answer should be in json format
 ```code
 { text: 'hi', reply: 'Hey! How are you?' }
+```
+
+## Functions
+
+### rasa.parseModel
+```javascript
+rasa.parseModel: (message: string, callback: Function) => void
+```
+### rasa.sendMessage
+ ```javascript
+rasa.message(message: string, callback: Function): Promise<void>
+```
+
+### rasa.entry
+```javascript
+rasa.entry: () => void
+```
+### rasa.addEvent
+```javascript
+rasa.addEvent: (eventname: string, callback: Function) => void
+```
+
+### rasa.resetEvent
+```javascript
+rasa.resetEvent: (eventname: string, callback: Function) => void
+```
+### rasa.ConversionTracker
+```javascript
+rasa.ConversionTracker: (callback: Function) => void
+```
+### rasa.chatHistory
+```javascript
+rasa.chatHistory: (callback: Function) => void
+```
+### rasa.replayDomain
+```javascript
+rasa.replayDomain: (name: string, callback: Function) => void
+```
+### rasa.injectIntent
+```javascript
+rasa.evaluateStories: (name: string, callback: Function) => void
+```
+### rasa.evaluateStories
+```javascript
+rasa.evaluateStories: (name: string, callback: Function) => void
+```
+### rasa.replaceModel
+```javascript
+rasa.replaceModel: (path: string, callback: Function) => void
+```
+### rasa.version
+```javascript
+rasa.domain: (callback: Function) => void
+```
+### rasa.domain
+```javascript
+rasa.domain: (callback: Function) => void
+```
+### rasa.status
+```javascript
+rasa.status: (callback: Function) => void
+```
+### rasa.baseUrl
+```javascript
+rasa.baseUrl: (url: string) => void
 ```
