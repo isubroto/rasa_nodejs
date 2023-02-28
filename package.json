@@ -1,6 +1,6 @@
 {
   "name": "rasajs",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Node js module for Rasa Chatbot",
   "main": "index.js",
   "type": "module",

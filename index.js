@@ -1,23 +1,6 @@
 import rasa from './lib/rasa.js';
 
-const { sendMessage,
-    entry,
-    addEvent,
-    resetEvent,
-    ConversionTracker,
-    chatHistory,
-    replayDomain,
-    injectIntent,
-    evaluateStories,
-    replaceModel,
-    version,
-    domain,
-    status } = rasa;
-
-
-
-export {
-    rasa as default,
+const { baseUrl,
     sendMessage,
     entry,
     addEvent,
@@ -30,5 +13,23 @@ export {
     replaceModel,
     version,
     domain,
-    status
+    status,
+    parseModel } = rasa;
+export {
+    rasa as default,
+    baseUrl,
+    sendMessage,
+    entry,
+    addEvent,
+    resetEvent,
+    ConversionTracker,
+    chatHistory,
+    replayDomain,
+    injectIntent,
+    evaluateStories,
+    replaceModel,
+    version,
+    domain,
+    status,
+    parseModel
 }
