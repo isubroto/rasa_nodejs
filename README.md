@@ -1,4 +1,4 @@
-# Creating a Chatbot fot Rasa with Node.js
+# Creating a Chatbot for Rasa with Node.js
 ## Introduction
 Rasa is an open source conversational AI framework that allows developers to build and deploy chatbots and voice assistants. Rasa offers several language-specific APIs to interact with the framework, including a Node.js API.\
 The Rasa Node.js API allows you to integrate Rasa into your Node.js applications and interact with your Rasa chatbot or voice assistant through HTTP requests. With this API, you can send messages to your chatbot, receive responses, and track conversation history.
@@ -39,7 +39,7 @@ rasa.parseModel: (message: string, callback: Function) => void
 ```
 ### rasa.sendMessage
  ```javascript
-rasa.message(message: string, callback: Function): Promise<void>
+rasa.sendMessage(message: string, callback: Function): Promise<void>
 ```
 
 ### rasa.entry
